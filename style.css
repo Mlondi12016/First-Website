@@ -1,0 +1,121 @@
+/* style.css - External Stylesheet for UYA Website */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #fffaf5;
+  color: #333;
+}
+
+header {
+  background: #3e2723;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  background: #5d4037;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('hero-image.jpg') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px #000;
+  text-align: center;
+  padding: 1rem;
+}
+
+.section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section h2 {
+  border-bottom: 2px solid #6d4c41;
+  padding-bottom: 0.5rem;
+}
+
+.gallery, .categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+
+.gallery-item, .category {
+  width: 30%;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.gallery-item img, .category img {
+  width: 100%;
+  border-radius: 5px;
+  cursor: zoom-in;
+  transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea, select {
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.7rem;
+  background: #6d4c41;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5d4037;
+}
+
+footer {
+  background: #3e2723;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .gallery-item, .category {
+    width: 100%;
+  }
+} 
